@@ -13,7 +13,10 @@ export function AiVoiceBookingWidget() {
   const [success, setSuccess] = useState<boolean>(false);
   const [formError, setFormError] = useState<string | null>(null);
 
-  const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
+  const rawBackendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
+  const backendUrl = typeof window !== "undefined" && window.location.protocol === "https:" && rawBackendUrl.startsWith("http://")
+    ? ""
+    : rawBackendUrl;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

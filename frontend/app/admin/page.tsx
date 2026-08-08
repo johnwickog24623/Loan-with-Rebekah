@@ -15,7 +15,10 @@ export default function AdminPage(props: SearchParamsProps) {
   const [error, setError] = useState<string | null>(null);
   const [connectedEmail, setConnectedEmail] = useState<string | null>(searchParams?.email || null);
   const [isConnected, setIsConnected] = useState<boolean>(searchParams?.status === "connected");
-  const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
+  const rawBackendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
+  const backendUrl = typeof window !== "undefined" && window.location.protocol === "https:" && rawBackendUrl.startsWith("http://")
+    ? ""
+    : rawBackendUrl;
 
   useEffect(() => {
     async function loadData() {
