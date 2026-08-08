@@ -84,5 +84,5 @@ def google_callback(
             "google_email": account.google_email,
             "calendar_id": account.calendar_id
         })
-    frontend_admin_url = f"http://localhost:3000/admin?status=connected&email={account.google_email}"
+    frontend_admin_url = f"{settings.FRONTEND_URL.rstrip('/')}/admin?status=connected&email={account.google_email}"
     return RedirectResponse(url=frontend_admin_url, status_code=status.HTTP_307_TEMPORARY_REDIRECT)
