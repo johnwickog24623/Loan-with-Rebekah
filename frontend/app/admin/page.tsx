@@ -68,9 +68,6 @@ export default function AdminPage(props: SearchParamsProps) {
           transition={{ duration: 0.5 }}
           className="text-center space-y-3"
         >
-          <span className="text-xs uppercase tracking-widest font-semibold text-champagne bg-surface-raised px-4 py-1.5 rounded-full border border-line">
-            Admin Console
-          </span>
           <h1 className="font-display text-4xl sm:text-5xl font-semibold tracking-tight text-text">
             Google Calendar Integration
           </h1>
