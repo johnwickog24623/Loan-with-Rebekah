@@ -2,7 +2,7 @@ export const chatFaqs = [
   {
     question: "How do I apply for pre-approval or book a consultation?",
     answer:
-      "You can submit an inquiry or request an appointment directly on our website, or call our 24/7 AI voice assistant at +1 (447) 786-6065.",
+      "You can submit an inquiry or request an appointment directly on our website, or call our 24/7 AI voice assistant at +1 (447) 786-6095.",
   },
   {
     question: "Do you help first-time home buyers?",
@@ -27,6 +27,6 @@ export const chatFaqs = [
   {
     question: "How can I contact Rebekah?",
     answer:
-      "Email rebekah@loanswithrebekah.com, call +1 (447) 786-6065, or use the booking section on our website. Hours are Mon–Fri, 9:00 AM – 5:00 PM.",
+      "Email rebekah@loanswithrebekah.com, call +1 (447) 786-6095, or use the booking section on our website. Hours are Mon–Fri, 9:00 AM – 5:00 PM.",
   },
 ];
