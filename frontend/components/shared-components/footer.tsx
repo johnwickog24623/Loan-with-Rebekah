@@ -16,11 +16,10 @@ export function Footer({ variant = "default" }: FooterProps) {
   const isCinematic = variant === "cinematic";
   return (
     <footer
-      className={`relative border-t px-6 pb-28 pt-12 sm:pb-16 md:px-12 md:py-14 lg:px-16 ${
-        isCinematic
+      className={`relative border-t px-6 pb-28 pt-12 sm:pb-16 md:px-12 md:py-14 lg:px-16 ${isCinematic
           ? "border-[color:var(--color-line)] bg-surface/90 backdrop-blur-sm"
           : "border-[color:var(--color-line)] bg-surface/80 backdrop-blur-sm"
-      }`}
+        }`}
     >
       <ScrollReveal variant="fade-up">
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
@@ -57,7 +56,7 @@ export function Footer({ variant = "default" }: FooterProps) {
               Contact & Hours
             </p>
             <p className="font-medium text-text">Rebekah — Mortgage Professional</p>
-            <p className="text-xs font-semibold text-accent">Phone: <a href="tel:+14477866061" className="hover:underline">+1 (447) 786-6061</a></p>
+            <p className="text-xs font-semibold text-accent">Phone: <a href="tel:+14477866065" className="hover:underline">+1 (447) 786-6065</a></p>
             <p className="text-xs text-muted">Office Hours: Mon - Fri, 9:00 AM - 5:00 PM</p>
             <p className="text-xs text-emerald-800 font-semibold pt-1">Elliot AI Voice Assistant: 24/7 Available</p>
           </div>

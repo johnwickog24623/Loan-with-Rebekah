@@ -228,24 +228,24 @@ export function AiVoiceBookingWidget() {
                   <span>Direct Contact Info Collection</span>
                 </li>
               </ul>
-            <a
-              href="tel:+14477866061"
-              className="mt-3 flex items-center justify-center space-x-2 w-full py-3 bg-jet text-white font-semibold text-xs rounded-xl shadow hover:bg-accent transition-colors"
-            >
-              <svg className="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              <span>Call +1 (447) 786-6061</span>
-            </a>
+              <a
+                href="tel:+14477866065"
+                className="mt-3 flex items-center justify-center space-x-2 w-full py-3 bg-jet text-white font-semibold text-xs rounded-xl shadow hover:bg-accent transition-colors"
+              >
+                <svg className="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <span>Call +1 (447) 786-6065</span>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div className="pt-6 border-t border-line space-y-3">
+          <div className="pt-6 border-t border-line space-y-3">
             <h3 className="font-semibold text-xs uppercase tracking-wider text-text">Direct Contact Details</h3>
             <div className="space-y-2.5 text-xs text-muted">
               <div className="flex items-center justify-between py-1 border-b border-line/60">
                 <span className="font-medium text-text/80">Phone</span>
-                <a href="tel:+14477866061" className="font-semibold text-accent hover:underline">+1 (447) 786-6061</a>
+                <a href="tel:+14477866065" className="font-semibold text-accent hover:underline">+1 (447) 786-6065</a>
               </div>
               <div className="flex items-center justify-between py-1 border-b border-line/60">
                 <span className="font-medium text-text/80">Brokerage</span>
