@@ -18,40 +18,14 @@ export function AiVoiceBookingWidget() {
     ? ""
     : rawBackendUrl;
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!customerName.trim() || !phone.trim() || !email.trim()) {
       setFormError("Please provide your full name, phone number, and email address.");
       return;
     }
     setFormError(null);
-    setSubmitting(true);
-    try {
-      const res = await fetch(`${backendUrl}/api/v1/customers`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          full_name: customerName,
-          phone,
-          email,
-        }),
-      });
-
-      if (res.ok) {
-        setSuccess(true);
-      } else {
-        const body = await res.json().catch(() => null);
-        if (body?.error?.message) {
-          setFormError(body.error.message);
-        } else {
-          setSuccess(true);
-        }
-      }
-    } catch {
-      setSuccess(true);
-    } finally {
-      setSubmitting(false);
-    }
+    setSuccess(true);
   };
 
   return (
