@@ -117,6 +117,73 @@ body {
   mix-blend-mode: multiply;
 }
 
+.calculator-range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    to right,
+    var(--color-champagne) 0%,
+    var(--color-accent) var(--range-progress, 50%),
+    color-mix(in srgb, var(--color-line) 100%, transparent) var(--range-progress, 50%),
+    color-mix(in srgb, var(--color-line) 100%, transparent) 100%
+  );
+  cursor: pointer;
+}
+
+.calculator-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  border: 2px solid var(--color-surface);
+  background: var(--color-jet);
+  box-shadow: 0 4px 14px rgba(18, 18, 20, 0.22);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.calculator-range::-webkit-slider-thumb:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(18, 18, 20, 0.28);
+}
+
+.calculator-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  border: 2px solid var(--color-surface);
+  background: var(--color-jet);
+  box-shadow: 0 4px 14px rgba(18, 18, 20, 0.22);
+  cursor: pointer;
+}
+
+.calculator-range::-moz-range-track {
+  height: 6px;
+  border-radius: 9999px;
+  background: color-mix(in srgb, var(--color-line) 100%, transparent);
+}
+
+.calculator-input {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-line);
+  background: var(--color-surface);
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.calculator-input:focus {
+  border-color: color-mix(in srgb, var(--color-champagne) 55%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-champagne) 18%, transparent);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .home-cinematic * {
     animation-duration: 0.01ms !important;

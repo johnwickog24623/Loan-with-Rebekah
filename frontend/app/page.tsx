@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { HeroSection } from "@/components/landing-page-section/hero/hero-section";
-import { MortgageSolutionsSection } from "@/components/landing-page-section/services/mortgage-solutions-section";
+import { ClientProofSection } from "@/components/landing-page-section/client-proof/client-proof-section";
 import { MortgageCalculator } from "@/components/landing-page-section/calculator/mortgage-calculator";
 import { WhyChooseUsSection } from "@/components/landing-page-section/why-choose-us/why-choose-us-section";
 import { AiVoiceBookingWidget } from "@/components/landing-page-section/booking/ai-voice-booking-widget";
@@ -28,7 +28,7 @@ export default function Home() {
             <HeroSection isIntroFinished={isIntroFinished} />
           </div>
           <div data-scroll-zoom className="w-full will-change-transform">
-            <MortgageSolutionsSection />
+            <ClientProofSection />
           </div>
           <div data-scroll-zoom className="w-full will-change-transform">
             <MortgageCalculator />

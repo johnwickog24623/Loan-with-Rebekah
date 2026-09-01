@@ -3,7 +3,7 @@ import { ScrollReveal } from "@/components/shared-components/scroll-reveal";
 
 const footerLinks = [
   { label: "Home", href: "#" },
-  { label: "Loan Solutions", href: "#solutions" },
+  { label: "Client Results", href: "#proof" },
   { label: "Mortgage Calculator", href: "#calculator" },
   { label: "Schedule Call", href: "#booking" },
 ];
